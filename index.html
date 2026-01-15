@@ -5,162 +5,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Priyanka Mondal | Data Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #2563eb;
-      --secondary: #1e293b;
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #334155;
-      --muted: #64748b;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #333;
+      line-height: 1.6;
     }
-
-```
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-}
-
-header {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: #fff;
-  padding: 90px 20px 70px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin: 6px 0;
-  opacity: 0.95;
-}
-
-header a {
-  color: #fff;
-  margin: 0 10px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-header a:hover { text-decoration: underline; }
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 70px 20px;
-}
-
-section { margin-bottom: 70px; }
-
-h2 {
-  font-size: 1.9rem;
-  margin-bottom: 25px;
-  color: var(--secondary);
-  position: relative;
-}
-
-h2::after {
-  content: '';
-  width: 60px;
-  height: 4px;
-  background: var(--primary);
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  border-radius: 5px;
-}
-
-.card {
-  background: var(--card);
-  border-radius: 14px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-}
-
-.skill-title {
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: var(--secondary);
-}
-
-.experience-item h3 {
-  margin-bottom: 5px;
-  color: var(--secondary);
-}
-
-.experience-item span {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-ul { padding-left: 20px; }
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.project-title {
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-  color: var(--secondary);
-}
-
-.project-tools {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-.project-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: var(--primary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.project-link:hover { text-decoration: underline; }
-
-footer {
-  background: var(--secondary);
-  color: #e5e7eb;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  header h1 { font-size: 2.2rem; }
-  header p { font-size: 1.05rem; }
-}
-```
-
+    header {
+      background: linear-gradient(135deg, #1f3c88, #3a7bd5);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #1f3c88;
+      border-bottom: 3px solid #3a7bd5;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .experience h3 {
+      margin-bottom: 5px;
+    }
+    .experience span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #1f3c88;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #3a7bd5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -169,9 +85,9 @@ footer {
   <h1>Priyanka Mondal</h1>
   <p>Data Analyst | MIS Executive (FinTech)</p>
   <p>
-    <a href="mailto:priyanka61mondal@gmail.com">Email</a> ·
-    <a href="https://www.linkedin.com/in/priyanka4296">LinkedIn</a> ·
-    <a href="https://github.com/priyanka61mondal">GitHub</a>
+    <a href="mailto:priyanka61mondal@gmail.com" style="color:#fff;">Email</a> | 
+    <a href="https://www.linkedin.com/in/priyanka4296" style="color:#fff;">LinkedIn</a> | 
+    <a href="https://github.com/priyanka61mondal" style="color:#fff;">GitHub</a>
   </p>
 </header>
 
@@ -179,75 +95,65 @@ footer {
 
   <section>
     <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Data Analyst with 2+ years of experience in the FinTech domain, specializing in SQL-based analysis,
-        reporting automation, and dashboard development. Experienced in translating business requirements
-        into actionable insights using Excel, Power BI, and Python.
-      </p>
-    </div>
+    <p>
+      Data-driven professional with 2+ years of experience as an MIS Executive in the FinTech domain.
+      Strong expertise in SQL and Advanced Excel for data analysis, reporting, and automation.
+      Currently transitioning into a Data Analyst role with hands-on exposure to Python and Power BI
+      to deliver actionable business insights.
+    </p>
   </section>
 
   <section>
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="card"><div class="skill-title">SQL</div>Joins, CTEs, Subqueries</div>
-      <div class="card"><div class="skill-title">Excel (Advanced)</div>Dashboards, Pivot Tables</div>
-      <div class="card"><div class="skill-title">Python</div>Pandas, NumPy</div>
-      <div class="card"><div class="skill-title">Power BI</div>Interactive Dashboards</div>
-      <div class="card"><div class="skill-title">Data Analysis</div>Cleaning & Reporting</div>
-      <div class="card"><div class="skill-title">Business Skills</div>Stakeholder Communication</div>
+      <div class="card"><strong>SQL</strong><br/>Joins, CTEs, Subqueries</div>
+      <div class="card"><strong>Excel (Advanced)</strong><br/>Dashboards, Pivot Tables</div>
+      <div class="card"><strong>Python</strong><br/>Pandas, NumPy</div>
+      <div class="card"><strong>Power BI</strong><br/>Interactive Dashboards</div>
+      <div class="card"><strong>Data Analysis</strong><br/>Cleaning & Reporting</div>
+      <div class="card"><strong>Business Skills</strong><br/>Stakeholder Communication</div>
     </div>
   </section>
 
-  <section>
+  <section class="experience">
     <h2>Experience</h2>
-    <div class="card experience-item">
+    <div class="card">
       <h3>MIS Executive – mPokket Financial Services Pvt. Ltd.</h3>
-      <span>Sept 2023 – Present | Kolkata</span>
+      <span>Sept 2023 – Dec 2025 | Kolkata</span>
       <ul>
-        <li>Built and maintained automated MIS dashboards using SQL and Advanced Excel.</li>
-        <li>Delivered real-time insights to business stakeholders, improving decision-making speed.</li>
-        <li>Reduced manual reporting effort by 40% through automation support.</li>
-        <li>Improved reporting turnaround time by 30% via workflow optimization.</li>
+        <li>Developed and maintained MIS dashboards using SQL and Advanced Excel.</li>
+        <li>Delivered real-time and ad-hoc reports to business stakeholders.</li>
+        <li>Contributed to report automation reducing manual effort by 40%.</li>
+        <li>Optimized reporting workflows improving turnaround time by 30%.</li>
       </ul>
     </div>
   </section>
 
   <section>
     <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <div class="project-title">Sales & Operations Dashboard</div>
-        <div class="project-tools">Excel · Power BI</div>
-        <p>Designed an interactive dashboard to track KPIs and operational performance.</p>
-        <a class="project-link" href="#">GitHub →</a>
-      </div>
-      <div class="card">
-        <div class="project-title">SQL Business Analysis</div>
-        <div class="project-tools">SQL · Data Analysis</div>
-        <p>Analyzed large datasets using joins and CTEs to derive actionable insights.</p>
-        <a class="project-link" href="#">GitHub →</a>
-      </div>
-      <div class="card">
-        <div class="project-title">Python Data Analysis</div>
-        <div class="project-tools">Python · Pandas · NumPy</div>
-        <p>Performed data cleaning and exploratory analysis on structured datasets.</p>
-        <a class="project-link" href="#">GitHub →</a>
-      </div>
+    <div class="card">
+      <p><strong>Sales & Operations Dashboard</strong> – Excel / Power BI</p>
+      <p><strong>SQL Data Analysis Project</strong> – Business performance insights</p>
+      <p><strong>Python Data Analysis</strong> – Data cleaning & EDA using Pandas</p>
+      <p style="color:#777;">(GitHub links can be added here)</p>
     </div>
   </section>
 
   <section>
-    <h2>Education & Certifications</h2>
+    <h2>Education</h2>
     <div class="card">
-      <p><strong>M.Sc. Physics</strong> – Vidyasagar University</p>
-      <p><strong>B.Sc. Physics (Hons.)</strong> – University of Calcutta</p>
-      <hr style="margin:20px 0;">
+      <p><strong>M.Sc. Physics</strong> – Vidyasagar University (2016–2018)</p>
+      <p><strong>B.Sc. Physics (Hons.)</strong> – University of Calcutta (2013–2016)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
       <ul>
         <li>Advanced Certification in Data Science & AI – IIT Madras (Intellipaat)</li>
         <li>HackerRank SQL Gold Badge</li>
-        <li>Diploma in IT Applications (Grade A)</li>
+        <li>Diploma in Information Technology Applications (Grade A)</li>
       </ul>
     </div>
   </section>
@@ -255,8 +161,9 @@ footer {
 </div>
 
 <footer>
-  © 2026 Priyanka Mondal · Data Analyst Portfolio
+  <p>© 2026 Priyanka Mondal | Data Analyst Portfolio</p>
 </footer>
 
 </body>
 </html>
+
