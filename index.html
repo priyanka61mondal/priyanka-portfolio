@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Priyanka Mondal | Data Analyst</title>
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,28 +13,45 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, #1f3c88, #3a7bd5);
       color: #fff;
       padding: 60px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.8rem;
     }
+
     header p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
+
+    header p a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header p a:hover {
+      text-decoration: underline;
+    }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
+
     section {
       margin-bottom: 50px;
     }
+
     h2 {
       color: #1f3c88;
       border-bottom: 3px solid #3a7bd5;
@@ -42,52 +59,62 @@
       padding-bottom: 5px;
       margin-bottom: 20px;
     }
+
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: #fff;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
     .experience h3 {
       margin-bottom: 5px;
     }
+
     .experience span {
       font-size: 0.9rem;
       color: #666;
     }
+
     ul {
       padding-left: 20px;
     }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
     footer {
       background: #1f3c88;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
-    a {
-      color: #3a7bd5;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Priyanka Mondal</h1>
-  <p>Data Analyst | MIS Executive (FinTech)</p>
+  <p>Aspiring Data Analyst | SQL • Python • Power BI</p>
   <p>
-    <a href="mailto:priyanka61mondal@gmail.com" style="color:#fff;">Email</a> | 
-    <a href="https://www.linkedin.com/in/priyanka4296" style="color:#fff;">LinkedIn</a> | 
-    <a href="https://github.com/priyanka61mondal" style="color:#fff;">GitHub</a>
+    <a href="mailto:priyanka61mondal@gmail.com">Email</a> | 
+    <a href="https://www.linkedin.com/in/priyanka4296" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/priyanka61mondal" target="_blank">GitHub</a>
   </p>
 </header>
 
@@ -97,9 +124,8 @@
     <h2>About Me</h2>
     <p>
       Data-driven professional with 2+ years of experience as an MIS Executive in the FinTech domain.
-      Strong expertise in SQL and Advanced Excel for data analysis, reporting, and automation.
-      Currently transitioning into a Data Analyst role with hands-on exposure to Python and Power BI
-      to deliver actionable business insights.
+      Skilled in SQL and Advanced Excel for reporting and automation. Currently transitioning into a 
+      Data Analyst role with hands-on experience in Python and Power BI to deliver actionable insights.
     </p>
   </section>
 
@@ -107,11 +133,22 @@
     <h2>Skills</h2>
     <div class="skills-grid">
       <div class="card"><strong>SQL</strong><br/>Joins, CTEs, Subqueries</div>
-      <div class="card"><strong>Excel (Advanced)</strong><br/>Dashboards, Pivot Tables</div>
+      <div class="card"><strong>Excel</strong><br/>Dashboards, Pivot Tables</div>
       <div class="card"><strong>Python</strong><br/>Pandas, NumPy</div>
       <div class="card"><strong>Power BI</strong><br/>Interactive Dashboards</div>
       <div class="card"><strong>Data Analysis</strong><br/>Cleaning & Reporting</div>
       <div class="card"><strong>Business Skills</strong><br/>Stakeholder Communication</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Automated reporting processes reducing manual effort by 40%</li>
+        <li>Improved report turnaround time by 30%</li>
+        <li>Built dashboards for business decision-making</li>
+      </ul>
     </div>
   </section>
 
@@ -121,39 +158,46 @@
       <h3>MIS Executive – mPokket Financial Services Pvt. Ltd.</h3>
       <span>Sept 2023 – Dec 2025 | Kolkata</span>
       <ul>
-        <li>Developed and maintained MIS dashboards using SQL and Advanced Excel.</li>
-        <li>Delivered real-time and ad-hoc reports to business stakeholders.</li>
-        <li>Contributed to report automation reducing manual effort by 40%.</li>
-        <li>Optimized reporting workflows improving turnaround time by 30%.</li>
+        <li>Developed MIS dashboards using SQL and Excel</li>
+        <li>Delivered real-time reports to stakeholders</li>
+        <li>Automated reporting workflows</li>
       </ul>
     </div>
   </section>
 
-<section>
-  <h2>Projects</h2>
+  <section>
+    <h2>Projects</h2>
 
-  <div class="card">
-    <h3>🏦 Loan Approval Risk Analysis</h3>
+    <div class="card">
+      <h3>🏦 Loan Approval Risk Analysis</h3>
 
-    <p>
-      Conducted exploratory data analysis on loan applicant data to identify key factors influencing loan approval decisions. 
-      Analyzed the impact of credit history, income, and loan amount to uncover patterns that support risk assessment and data-driven financial decision-making.
-    </p>
+      <p>
+        Performed exploratory data analysis on loan data to identify key approval factors.
+      </p>
 
-    <p>
+      <p><strong>Tools:</strong> Python, Pandas, Matplotlib</p>
+
+      <ul>
+        <li>Credit history is the strongest predictor of loan approval</li>
+        <li>Higher income reduces default risk</li>
+      </ul>
+
       <a href="https://github.com/priyanka61mondal/Loan-Approval-Risk-Analysis" target="_blank">
-        🔗 View Project on GitHub
+        🔗 View Project
       </a>
-    </p>
-  </div>
 
-</section>
+      <!-- Optional Screenshot -->
+      <!-- <img src="project-image.png" alt="Project Screenshot"> -->
+
+    </div>
+
+  </section>
 
   <section>
     <h2>Education</h2>
     <div class="card">
-      <p><strong>M.Sc. Physics</strong> – Vidyasagar University (2016–2018)</p>
-      <p><strong>B.Sc. Physics (Hons.)</strong> – University of Calcutta (2013–2016)</p>
+      <p><strong>M.Sc. Physics</strong> – Vidyasagar University</p>
+      <p><strong>B.Sc. Physics (Hons.)</strong> – University of Calcutta</p>
     </div>
   </section>
 
@@ -163,8 +207,17 @@
       <ul>
         <li>Advanced Certification in Data Science & AI – IIT Madras (Intellipaat)</li>
         <li>HackerRank SQL Gold Badge</li>
-        <li>Diploma in Information Technology Applications (Grade A)</li>
+        <li>Diploma in IT Applications</li>
       </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: priyanka61mondal@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/priyanka4296</p>
+      <p>GitHub: github.com/priyanka61mondal</p>
     </div>
   </section>
 
@@ -174,6 +227,7 @@
   <p>© 2026 Priyanka Mondal | Data Analyst Portfolio</p>
 </footer>
 
+<!-- update -->
+
 </body>
 </html>
-
