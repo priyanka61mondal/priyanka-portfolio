@@ -1,266 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priyanka Mondal | Data Analyst</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Mondal | Data Analyst</title>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f5f7fb;
-      color: #333;
-      line-height: 1.6;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      background: linear-gradient(135deg, #1f3c88, #3a7bd5);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    header p a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
+        header {
+            background: linear-gradient(135deg, #1f3c88, #3a7bd5);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
 
-    header p a:hover {
-      text-decoration: underline;
-    }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+        header h2 {
+            border: none;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
 
-    section {
-      margin-bottom: 50px;
-    }
+        header p {
+            margin-top: 15px;
+        }
 
-    h2 {
-      color: #1f3c88;
-      border-bottom: 3px solid #3a7bd5;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
+        header a {
+            color: white;
+            margin: 0 12px;
+            font-weight: 600;
+            transition: .3s;
+        }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+        header a:hover {
+            color: #ffe082;
+        }
 
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+        section {
+            margin-bottom: 60px;
+        }
 
-    .experience h3 {
-      margin-bottom: 5px;
-    }
+        section h2 {
+            display: inline-block;
+            color: #1f3c88;
+            border-bottom: 4px solid #3a7bd5;
+            margin-bottom: 25px;
+            padding-bottom: 5px;
+        }
 
-    .experience span {
-      font-size: 0.9rem;
-      color: #666;
-    }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,.08);
+            transition: .3s;
+        }
 
-    ul {
-      padding-left: 20px;
-    }
+        .card:hover {
+            transform: translateY(-8px);
+        }
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 20px;
+        }
 
-    footer {
-      background: #1f3c88;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+            gap: 30px;
+        }
+
+        .projects-grid .card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            color: #1f3c88;
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            margin-top: auto;
+            display: inline-block;
+            background: #1f3c88;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #3a7bd5;
+        }
+
+        .experience span {
+            color: gray;
+            font-size: .95rem;
+        }
+
+        footer {
+            background: #1f3c88;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size:2.3rem;
+            }
+
+            .projects-grid{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
-
 <body>
 
 <header>
-  <h1>Priyanka Mondal</h1>
-  <p>Aspiring Data Analyst | SQL • Python • Power BI</p>
-  <p>
-    <a href="mailto:priyanka61mondal@gmail.com">Email</a> | 
-    <a href="https://www.linkedin.com/in/priyanka4296" target="_blank">LinkedIn</a> | 
-    <a href="https://github.com/priyanka61mondal" target="_blank">GitHub</a>
-  </p>
+
+    <h1>Priyanka Mondal</h1>
+
+    <h2>Aspiring Data Analyst | SQL • Python • Power BI</h2>
+
+    <p>
+        <a href="mailto:priyanka61mondal@gmail.com">📧 Email</a> |
+        <a href="https://www.linkedin.com/in/priyanka4296" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/priyanka61mondal" target="_blank">GitHub</a>
+    </p>
+
 </header>
 
 <div class="container">
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Data-driven professional with 2+ years of experience as an MIS Executive in the FinTech domain.
-      Skilled in SQL and Advanced Excel for reporting and automation. Currently transitioning into a 
-      Data Analyst role with hands-on experience in Python and Power BI to deliver actionable insights.
-    </p>
-  </section>
+    <!-- About -->
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="card"><strong>SQL</strong><br/>Joins, CTEs, Subqueries</div>
-      <div class="card"><strong>Excel</strong><br/>Dashboards, Pivot Tables</div>
-      <div class="card"><strong>Python</strong><br/>Pandas, NumPy</div>
-      <div class="card"><strong>Power BI</strong><br/>Interactive Dashboards</div>
-      <div class="card"><strong>Data Analysis</strong><br/>Cleaning & Reporting</div>
-      <div class="card"><strong>Business Skills</strong><br/>Stakeholder Communication</div>
-    </div>
-  </section>
+    <section>
 
-  <section>
-    <h2>Key Achievements</h2>
-    <div class="card">
-      <ul>
-        <li>Automated reporting processes reducing manual effort by 40%</li>
-        <li>Improved report turnaround time by 30%</li>
-        <li>Built dashboards for business decision-making</li>
-      </ul>
-    </div>
-  </section>
+        <h2>About Me</h2>
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>MIS Executive – mPokket Financial Services Pvt. Ltd.</h3>
-      <span>Sept 2023 – Dec 2025 | Kolkata</span>
-      <ul>
-        <li>Developed MIS dashboards using SQL and Excel</li>
-        <li>Delivered real-time reports to stakeholders</li>
-        <li>Automated reporting workflows</li>
-      </ul>
-    </div>
-  </section>
+        <div class="card">
 
-<section>
-  <h2>Projects</h2>
+            <p>
 
-  <div class="skills-grid">
+                Data-driven professional with <strong>2+ years of experience</strong>
+                as an MIS Executive in the FinTech domain. Skilled in SQL,
+                Advanced Excel, Python, and Power BI for reporting,
+                dashboard development, and data analysis.
 
-    <!-- Project 1 -->
-    <div class="card">
+            </p>
 
-      <h3>🏦 Loan Approval Risk Analysis</h3>
+            <br>
 
-      <p>
-        Conducted exploratory data analysis on loan application data to uncover
-        the key factors influencing loan approvals and default risk.
-      </p>
+            <p>
 
-      <p><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+                Passionate about solving business problems using data,
+                uncovering meaningful insights through exploratory analysis,
+                and building interactive dashboards that support
+                informed decision-making.
 
-      <ul>
-        <li>Performed data cleaning and preprocessing.</li>
-        <li>Analyzed customer demographics and financial attributes.</li>
-        <li>Identified credit history as the strongest predictor of loan approval.</li>
-        <li>Created insightful visualizations to support business decisions.</li>
-      </ul>
+            </p>
 
-      <a href="https://github.com/priyanka61mondal/Loan-Approval-Risk-Analysis"
-         target="_blank">
-         🔗 View on GitHub
-      </a>
+        </div>
 
-    </div>
+    </section>
 
+    <!-- Skills -->
 
-    <!-- Project 2 -->
-    <div class="card">
+    <section>
 
-      <h3>🏨 AtliQ Grands Revenue Analysis</h3>
+        <h2>Skills</h2>
 
-      <p>
-        Developed an interactive Power BI dashboard for a luxury hotel chain to
-        analyze revenue performance, occupancy trends, booking platforms, and key
-        hospitality KPIs for strategic decision-making.
-      </p>
+        <div class="skills-grid">
 
-      <p><strong>Tools:</strong> Power BI, DAX, Power Query, Excel</p>
+            <div class="card">
+                <h3>SQL</h3>
+                Joins<br>
+                CTEs<br>
+                Window Functions<br>
+                Subqueries
+            </div>
 
-      <ul>
-        <li>Designed executive-level dashboards using Power BI.</li>
-        <li>Tracked Revenue, RevPAR, ADR, Occupancy %, and Realisation %.</li>
-        <li>Analyzed booking trends across hotels, cities, room classes, and booking platforms.</li>
-        <li>Created interactive filters, KPIs, and trend analysis for business insights.</li>
-      </ul>
+            <div class="card">
+                <h3>Excel</h3>
+                Pivot Tables<br>
+                XLOOKUP<br>
+                Dashboards<br>
+                Power Query
+            </div>
 
-      <a href="https://github.com/priyanka61mondal/AtliQ-Grands-Revenue-Analysis"
-         target="_blank">
-         🔗 View on GitHub
-      </a>
+            <div class="card">
+                <h3>Python</h3>
+                Pandas<br>
+                NumPy<br>
+                Matplotlib<br>
+                Seaborn
+            </div>
 
-    </div>
+            <div class="card">
+                <h3>Power BI</h3>
+                DAX<br>
+                Data Modeling<br>
+                Power Query<br>
+                Interactive Dashboards
+            </div>
 
-  </div>
-</section>
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <p><strong>M.Sc. Physics</strong> – Vidyasagar University</p>
-      <p><strong>B.Sc. Physics (Hons.)</strong> – University of Calcutta</p>
-    </div>
-  </section>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                Data Cleaning<br>
+                EDA<br>
+                Visualization<br>
+                Reporting
+            </div>
 
-  <section>
-    <h2>Certifications</h2>
-    <div class="card">
-      <ul>
-        <li>Advanced Certification in Data Science & AI – IIT Madras (Intellipaat)</li>
-        <li>HackerRank SQL Gold Badge</li>
-        <li>Diploma in IT Applications</li>
-      </ul>
-    </div>
-  </section>
+            <div class="card">
+                <h3>Business Skills</h3>
+                Stakeholder Communication<br>
+                MIS Reporting<br>
+                Automation<br>
+                Problem Solving
+            </div>
 
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: priyanka61mondal@gmail.com</p>
-      <p>LinkedIn: linkedin.com/in/priyanka4296</p>
-      <p>GitHub: github.com/priyanka61mondal</p>
-    </div>
-  </section>
+        </div>
+
+    </section>
+
+    <!-- Achievements -->
+
+    <section>
+
+        <h2>Key Achievements</h2>
+
+        <div class="card">
+
+            <ul>
+
+                <li>Automated reporting processes reducing manual effort by approximately 40%.</li>
+
+                <li>Improved report turnaround time by nearly 30%.</li>
+
+                <li>Built dashboards supporting faster business decision-making.</li>
+
+                <li>Delivered accurate and timely MIS reports for business stakeholders.</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Experience -->
+
+    <section class="experience">
+
+        <h2>Experience</h2>
+
+        <div class="card">
+
+            <h3>MIS Executive – mPokket Financial Services Pvt. Ltd.</h3>
+
+            <span>September 2023 – December 2025 | Kolkata</span>
+
+            <ul>
+
+                <li>Developed SQL and Excel-based MIS reports for multiple business teams.</li>
+
+                <li>Created dashboards to monitor business KPIs and operational performance.</li>
+
+                <li>Automated recurring reports to reduce manual effort.</li>
+
+                <li>Collaborated with stakeholders to deliver timely analytical insights.</li>
+
+                <li>Performed data validation and maintained reporting accuracy.</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+        <!-- Projects -->
+
+    <section>
+
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+
+            <div class="card">
+
+                <h3>🏦 Loan Approval Risk Analysis</h3>
+
+                <p>
+
+                    Conducted exploratory data analysis on loan application data
+                    to identify the major factors influencing loan approval and
+                    default risk.
+
+                </p>
+
+                <!-- Optional Screenshot -->
+                <!--
+                <img src="images/loan-analysis.png"
+                     alt="Loan Approval Risk Analysis Dashboard">
+                -->
+
+                <p>
+                    <strong>Tools:</strong>
+                    Python, Pandas, NumPy, Matplotlib, Seaborn
+                </p>
+
+                <ul>
+
+                    <li>Performed data cleaning and preprocessing.</li>
+
+                    <li>Analyzed customer demographics and financial behaviour.</li>
+
+                    <li>Identified Credit History as the strongest predictor of loan approval.</li>
+
+                    <li>Created visualizations to uncover business insights.</li>
+
+                </ul>
+
+                <a class="btn"
+                   href="https://github.com/priyanka61mondal/Loan-Approval-Risk-Analysis"
+                   target="_blank">
+
+                    View Project →
+
+                </a>
+
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="card">
+
+                <h3>🏨 AtliQ Grands Revenue Analysis</h3>
+
+                <p>
+
+                    Built an executive Power BI dashboard to analyze hotel
+                    revenue performance, occupancy trends, booking platforms,
+                    and hospitality KPIs for strategic decision-making.
+
+                </p>
+
+                <!-- Optional Screenshot -->
+                <!--
+                <img src="images/atliq-dashboard.png"
+                     alt="AtliQ Grands Dashboard">
+                -->
+
+                <p>
+
+                    <strong>Tools:</strong>
+
+                    Power BI, DAX, Power Query, Excel
+
+                </p>
+
+                <ul>
+
+                    <li>Designed an executive dashboard using Power BI.</li>
+
+                    <li>Tracked Revenue, ADR, RevPAR, Occupancy %, and Realisation %.</li>
+
+                    <li>Analyzed hotel, city, room class, and booking platform performance.</li>
+
+                    <li>Created interactive KPIs, slicers, and trend analysis for business insights.</li>
+
+                </ul>
+
+                <a class="btn"
+                   href="https://github.com/priyanka61mondal/AtliQ-Grands-Revenue-Analysis"
+                   target="_blank">
+
+                    View Project →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section>
+
+        <h2>Education</h2>
+
+        <div class="card">
+
+            <p>
+
+                <strong>M.Sc. Physics</strong><br>
+
+                Vidyasagar University
+
+            </p>
+
+            <br>
+
+            <p>
+
+                <strong>B.Sc. Physics (Hons.)</strong><br>
+
+                University of Calcutta
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Certifications -->
+
+    <section>
+
+        <h2>Certifications</h2>
+
+        <div class="card">
+
+            <ul>
+
+                <li>Advanced Certification in Data Science & AI – IIT Madras (Intellipaat)</li>
+
+                <li>HackerRank SQL Gold Badge</li>
+
+                <li>Diploma in IT Applications</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section>
+
+        <h2>Contact</h2>
+
+        <div class="card">
+
+            <p><strong>Email:</strong> priyanka61mondal@gmail.com</p>
+
+            <p><strong>LinkedIn:</strong> linkedin.com/in/priyanka4296</p>
+
+            <p><strong>GitHub:</strong> github.com/priyanka61mondal</p>
+
+        </div>
+
+    </section>
 
 </div>
 
 <footer>
-  <p>© 2026 Priyanka Mondal | Data Analyst Portfolio</p>
+
+    <p>
+
+        © 2026 Priyanka Mondal | Data Analyst Portfolio
+
+    </p>
+
 </footer>
 
-<!-- update -->
-
 </body>
+
 </html>
